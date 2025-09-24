@@ -6,7 +6,9 @@ console.log("This is your first JavaScript App 🎉");
 
 function sayHello() {
   document.querySelector("h3").textContent =
-    "Hej " + document.querySelector("input").value;
+    "Hej " +
+    document.querySelector("#name").value +
+    document.querySelector("#age").value;
 }
 
 document.querySelector("button").addEventListener("click", sayHello);
